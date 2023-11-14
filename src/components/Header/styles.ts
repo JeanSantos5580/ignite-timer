@@ -4,12 +4,13 @@ const HeaderContainer = styled.header`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 `
 
 const HeaderButtons = styled.nav`
   display: flex;
-  align-items: center;
   gap: 0.5rem;
+
   a {
     width: 3rem;
     height: 3rem;
@@ -22,11 +23,12 @@ const HeaderButtons = styled.nav`
     border-bottom: 3px solid transparent;
 
     border-radius: 2px;
-    color: ${(props) => props.theme.white};
-    line-height: 0;
+    color: ${(props) => props.theme['gray-100']};
+
     &:focus {
       color: ${(props) => props.theme['green-500']};
     }
+
     &:hover {
       border-bottom: 3px solid ${(props) => props.theme['green-500']};
     }

@@ -7,7 +7,7 @@ export function Header() {
     <HeaderContainer>
       <img src={igniteLogo} alt="" width={32} />
       <HeaderButtons>
-        <NavLink to="/" title="timer">
+        <NavLink to="/" title="Timer">
           <TimerIcon size={24} />
         </NavLink>
         <NavLink to="/history" title="Histórico">
